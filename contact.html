@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Writer</title>
+    <!--Style Sheets-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://use.fontawesome.com/fbaee93a28.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="index.html"
+            ><img src="img/logo.png" alt="Writer's logo"
+          /></a>
+        </div>
+        <ul>
+          <li>
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li>
+            <a href="about.html" class="nav-link"> About </a>
+          </li>
+          <li>
+            <a href="blog.html" class="nav-link"> Blog</a>
+          </li>
+          <li>
+            <a href="contact.html" class="nav-link"
+              ><span class="current">Contact</span>
+            </a>
+          </li>
+        </ul>
+        <!--Responsive menu-Button-->
+        <div class="menu-btn">
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
+        </div>
+        <!--/Responsive menu-Button-->
+        <!--Responsive nav-->
+        <ul class="menu-mobile">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home </a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link"> About </a>
+          </li>
+          <li class="nav-item">
+            <a href="blog.html" class="nav-link"> Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link"
+              ><span class="current">Contact</span>
+            </a>
+          </li>
+        </ul>
+        <!--/Responsive nav-->
+      </nav>
+    </header>
+    <main id="contact">
+      <h1>Contact me</h1>
+      <div class="flex">
+        <div class="message">
+          <hr class="black-line" />
+          <h2>Direct Message</h2>
+          <h1>Send a Message</h1>
+          <div class="holder1">
+            <label for="name">Name: *</label><br />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Type your name here..."
+            />
+          </div>
+          <div class="holder">
+            <label for="email">Email: *</label><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="example@mail.com"
+            />
+          </div>
+          <label for="Message">Message*</label><br />
+          <input type="text" name="message" id="message" /> <br />
+          <input type="submit" value="Send Message" />
+        </div>
+        <div class="social">
+          <hr class="black-line" />
+          <h2>Social Follow</h2>
+          <h1>Connect on Social Media</h1>
+          <a href=""><i class="fa fa-facebook fa-2x"></i></a>
+          <a href=""><i class="fa fa-twitter fa-2x"></i></a>
+          <a href=""><i class="fa fa-instagram fa-2x"></i></a>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>
+        Copyright
+        <a href="https://www.reachthabo.co.za">ReachThabo</a> &copy; 2020. All
+        rights reserved
+      </p>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

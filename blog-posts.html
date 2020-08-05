@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Post</title>
+    <!--Style Sheets-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://use.fontawesome.com/fbaee93a28.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="index.html"
+            ><img src="img/logo.png" alt="Writer's logo"
+          /></a>
+        </div>
+        <ul>
+          <li>
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li>
+            <a href="about.html" class="nav-link"> About </a>
+          </li>
+          <li>
+            <a href="blog.html" class="nav-link">
+              <span class="current">Blog</span></a
+            >
+          </li>
+          <li>
+            <a href="contact.html" class="nav-link"> Contact </a>
+          </li>
+        </ul>
+        <!--Responsive menu-Button-->
+        <div class="menu-btn">
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
+        </div>
+        <!--/Responsive menu-Button-->
+        <!--Responsive nav-->
+        <ul class="menu-mobile">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home </a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link"> About </a>
+          </li>
+          <li class="nav-item">
+            <a href="blog.html" class="nav-link"
+              ><span class="current">Blog</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link"> Contact </a>
+          </li>
+        </ul>
+        <!--/Responsive nav-->
+      </nav>
+    </header>
+    <main id="post">
+      <div class="flex">
+        <div class="main">
+          <h1>Mid Air</h1>
+          <h4>05 Jan 2020</h4>
+          <img src="img/topic-4.jpg" alt="" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+            praesentium vel, libero eius dolor fugiat ducimus deserunt doloribus
+            consequatur natus laborum beatae ipsa eveniet debitis aperiam. Odit
+            quasi maxime amet! Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. Magni sapiente aut fuga fugit eaque debitis quos
+            illo molestias nemo et, dolorum, reprehenderit deserunt eum id natus
+            provident sequi, adipisci consequuntur! Lorem ipsum dolor, sit amet
+            consectetur adipisicing elit. Earum eveniet recusandae harum sit
+            sequi minima quidem, nesciunt enim labore optio dolorem rerum
+            nostrum excepturi! Natus quo mollitia veritatis unde eius! <br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Reprehenderit ut iure cupiditate delectus dolorum illum. Saepe
+            possimus blanditiis ipsam voluptatem minima iure velit laborum,
+            dolores veniam dolorum quo provident explicabo? Lorem ipsum dolor
+            sit amet consectetur adipisicing elit. Sit consequatur recusandae
+            provident consequuntur quibusdam? Aliquid, rerum qui architecto
+            mollitia neque reiciendis ipsum natus, eaque aspernatur, sint
+            eligendi soluta eveniet voluptates? Lorem ipsum dolor, sit amet
+            consectetur adipisicing elit. Quaerat placeat mollitia et
+            laudantium, debitis fugiat dicta itaque modi, aut maxime similique
+            quod repellat sunt inventore est amet laboriosam voluptate!
+            Cupiditate.
+            <br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
+            quidem et voluptatum quaerat explicabo animi quia quos hic eligendi,
+            laudantium necessitatibus repudiandae, error commodi quas fuga
+            officiis blanditiis porro deserunt.
+          </p>
+          <hr class="grey-line" />
+          <h2>Leave a reply</h2>
+          <h3>
+            Your email will not be published. Required fields are marked *
+          </h3>
+          <form action="/action_page.php">
+            <label for="comment">Comment</label><br />
+            <input type="text" id="comment" name="comment" /><br />
+            <div class="holder1">
+              <label for="name">Name: *</label><br />
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Type your name here..."
+              />
+            </div>
+            <div class="holder">
+              <label for="email">Email: *</label><br />
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="example@mail.com"
+              />
+            </div>
+            <br />
+
+            <input type="checkbox" name="save-details" id="save-details" />
+            <label for="save-details"
+              >Save my details for next time I comment.</label
+            ><br />
+            <input type="submit" value="Post comment" />
+          </form>
+        </div>
+        <hr class="grey-line" />
+        <aside>
+          <input type="search" name="search" id="search-blogs" />
+          <h1>Recent Posts</h1>
+          <a href="#">Topic 1</a>
+          <a href="#">Topic 2</a>
+          <a href="#">Topic 3</a>
+          <a href="#">Topic 4</a>
+          <h1>Recent Comments</h1>
+          <p>
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
+            beatae quidem. Fugit quidem facere est necessitatibus vero officia.
+            Impedit adipisci autem esse assumenda placeat necessitatibus saepe,
+            voluptatum nobis corporis alias."
+          </p>
+          <h1>Follow Me</h1>
+
+          <img src="img/Portrait.jpg" alt="" />
+          <a href=""><i class="fa fa-facebook fa-2x"></i></a>
+          <a href=""><i class="fa fa-twitter fa-2x"></i></a>
+          <a href=""><i class="fa fa-instagram fa-2x"></i></a>
+        </aside>
+      </div>
+    </main>
+    <footer>
+      <p>
+        Copyright
+        <a href="https://www.reachthabo.co.za">ReachThabo</a> &copy; 2020. All
+        rights reserved
+      </p>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
