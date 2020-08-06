@@ -73,7 +73,8 @@ body {
   height: 100%;
   margin: 0;
   line-height: 1.5;
-  font-family: "Oswald", sans-serif; }
+  font-family: "Oswald", sans-serif;
+  overflow-x: hidden; }
 
 section {
   display: inline-block; }
@@ -93,6 +94,15 @@ h2 {
 p {
   font-size: 1.5rem;
   font-weight: 400; }
+
+a {
+  color: #fff; }
+  a:hover {
+    color: #009dff; }
+
+i.fa {
+  font-size: 1.5em;
+  padding-right: 20px; }
 
 hr.black-line {
   border: 2px solid #000; }
@@ -192,10 +202,7 @@ section#home-about {
         line-height: 1.7;
         margin-bottom: 8px; }
       section#home-about div.flex .about-text a {
-        font-size: 1.2rem;
-        color: #fff; }
-        section#home-about div.flex .about-text a:hover {
-          color: #acd3ec; }
+        font-size: 1.2rem; }
     section#home-about div.flex .about-img {
       float: right; }
       section#home-about div.flex .about-img img {
@@ -222,7 +229,7 @@ section#blog-topics {
     font-size: 1.2rem;
     color: #000; }
     section#blog-topics a:hover {
-      color: #0f3b57; }
+      color: #009dff; }
   section#blog-topics div.flex {
     display: flex;
     flex-direction: row; }
@@ -251,10 +258,7 @@ section#home-social {
     section#home-social div.center p {
       margin-top: 0px; }
     section#home-social div.center a {
-      color: #000;
-      padding: 5px; }
-      section#home-social div.center a:hover {
-        color: #0f3b57; }
+      color: #000; }
 
 main#about {
   padding: 10rem;
@@ -285,13 +289,13 @@ section#story {
   background-color: #0c0c0c;
   text-align: center; }
   section#story h1,
-  section#story p,
-  section#story a {
+  section#story p {
     color: #fff; }
   section#story p {
     text-align: justify; }
   section#story div.circle-img {
-    margin: 4rem 0; }
+    margin: 4rem 0;
+    margin-bottom: 2rem; }
     section#story div.circle-img img {
       width: 250px;
       height: 250px;
@@ -318,7 +322,7 @@ section#popular-blog {
     font-size: 1.2rem;
     color: #000; }
     section#popular-blog a:hover {
-      color: #0f3b57; }
+      color: #009dff; }
   section#popular-blog div.flex {
     display: flex;
     flex-direction: row; }
@@ -435,16 +439,22 @@ main#post {
     main#post div.flex aside {
       flex-basis: 25%; }
       main#post div.flex aside img {
+        display: block;
         width: 135px;
         height: 135px;
         border-radius: 50%;
         margin-left: 4rem;
-        margin-top: 3rem; }
+        margin-top: 3rem;
+        margin-bottom: 1rem; }
       main#post div.flex aside a {
         display: block;
         text-decoration: none;
         color: #000;
         font-size: 1.2rem; }
+        main#post div.flex aside a:hover {
+          color: #009dff; }
+        main#post div.flex aside a i.fa-facebook {
+          margin-left: 1rem; }
       main#post div.flex aside h1 {
         font-size: 2rem;
         margin-top: 2rem; }
@@ -456,6 +466,10 @@ main#post {
         height: 24px;
         margin-top: 3rem;
         margin-bottom: 2rem; }
+      main#post div.flex aside .socials {
+        display: inline-block;
+        text-align: center;
+        color: #000; }
 
 main#contact {
   padding-top: 8rem;
@@ -499,6 +513,15 @@ main#contact {
           border-color: #000; }
     main#contact .flex .social {
       flex-basis: 50%; }
+      main#contact .flex .social div {
+        text-align: center;
+        margin-top: 8rem; }
+        main#contact .flex .social div a {
+          color: #000; }
+          main#contact .flex .social div a:hover {
+            color: #009dff; }
+          main#contact .flex .social div a i.fa {
+            font-size: 2.5em; }
     main#contact .flex h1 {
       margin: 0; }
 
@@ -512,11 +535,8 @@ footer {
     font-size: 1rem;
     padding-top: 2rem; }
   footer a {
-    color: #fff;
     font-size: 1rem;
     text-decoration: underline; }
-    footer a:hover {
-      color: #acd3ec; }
 
 @media screen and (min-width: 769px) {
   .menu-btn {
@@ -613,10 +633,9 @@ footer {
       font-size: 1.5rem;
       margin-top: 1rem; }
     section#home-social div.center a {
-      color: #000;
-      padding: 5px; }
+      color: #000; }
       section#home-social div.center a:hover {
-        color: #0f3b57; }
+        color: #009dff; }
   main#about {
     padding: 6rem 2rem;
     height: 100%; }
@@ -652,7 +671,8 @@ footer {
     section#story p {
       text-align: justify; }
     section#story div.circle-img {
-      margin: 4rem 0; }
+      margin: 4rem 0;
+      margin-bottom: 2rem; }
       section#story div.circle-img img {
         width: 230px;
         height: 230px;
@@ -677,8 +697,6 @@ footer {
     section#popular-blog a {
       font-size: 1.2rem;
       color: #000; }
-      section#popular-blog a:hover {
-        color: #0f3b57; }
     section#popular-blog div.flex {
       display: flex;
       flex-direction: row; }
@@ -955,10 +973,9 @@ footer {
       section#home-social div.center h1 {
         font-size: 2.6rem; }
       section#home-social div.center a {
-        color: #000;
-        padding: 5px; }
+        color: #000; }
         section#home-social div.center a:hover {
-          color: #0f3b57; }
+          color: #009dff; }
   footer {
     height: 70px; }
   main#about {
@@ -997,7 +1014,8 @@ footer {
       text-align: justify;
       text-justify: inter-character; }
     section#story div.circle-img {
-      margin: 3rem 0; }
+      margin: 3rem 0;
+      margin-bottom: 1rem; }
       section#story div.circle-img img {
         width: 220px;
         height: 220px;
@@ -1020,8 +1038,6 @@ footer {
     section#popular-blog a {
       font-size: 1.2rem;
       color: #000; }
-      section#popular-blog a:hover {
-        color: #0f3b57; }
     section#popular-blog div.flex {
       display: flex;
       flex-direction: row; }
@@ -1353,7 +1369,8 @@ footer {
       text-align: justify;
       text-justify: inter-character; }
     section#story div.circle-img {
-      margin: 3rem 0; }
+      margin: 3rem 0;
+      margin-bottom: 1rem; }
       section#story div.circle-img img {
         width: 200px;
         height: 200px;
@@ -1377,7 +1394,7 @@ footer {
       font-size: 1.2rem;
       color: #000; }
       section#popular-blog a:hover {
-        color: #0f3b57; }
+        color: #009dff; }
     section#popular-blog div.flex {
       display: flex;
       flex-direction: row; }
@@ -1681,7 +1698,8 @@ footer {
       text-align: justify;
       text-justify: inter-character; }
     section#story div.circle-img {
-      margin: 3rem 0; }
+      margin: 3rem 0;
+      margin-bottom: 1rem; }
       section#story div.circle-img img {
         width: 180px;
         height: 180px;
@@ -1945,8 +1963,8 @@ footer {
         font-size: 1.8rem; }
       section#home-about div.flex .about-text p {
         width: 97%;
-        line-height: 1.5;
-        font-size: 1.3rem;
+        line-height: 1.7;
+        font-size: 1rem;
         margin-bottom: 5px;
         text-justify: inter-character;
         margin-left: 0.5rem; }
@@ -2032,11 +2050,13 @@ footer {
     section#story h1 {
       font-size: 2.6rem; }
     section#story p {
-      font-size: 1.3rem;
+      font-size: 1rem;
       text-align: justify;
-      text-justify: inter-character; }
+      text-justify: inter-character;
+      line-height: 1.7; }
     section#story div.circle-img {
-      margin: 3rem 0; }
+      margin: 3rem 0;
+      margin-bottom: 1rem; }
       section#story div.circle-img img {
         width: 180px;
         height: 180px;
@@ -2054,13 +2074,14 @@ footer {
       font-size: 1.8rem; }
     section#popular-blog p {
       color: #000;
+      font-size: 1rem;
       text-align: justify;
       line-height: 1.7; }
     section#popular-blog a {
       font-size: 1.2rem;
       color: #000; }
       section#popular-blog a:hover {
-        color: #0f3b57; }
+        color: #009dff; }
     section#popular-blog div.flex {
       display: flex;
       flex-direction: column; }
@@ -2085,8 +2106,9 @@ footer {
       main#blogs div.flex hr {
         margin-bottom: 1.5rem; }
       main#blogs div.flex p {
-        font-size: 1.3rem;
-        text-align: left; }
+        font-size: 1rem;
+        text-align: justify;
+        line-height: 1.7; }
       main#blogs div.flex button {
         width: 120px;
         height: 40px;
@@ -2126,7 +2148,8 @@ footer {
         main#post div.flex div.main h1 {
           font-size: 3rem; }
         main#post div.flex div.main p {
-          font-size: 1.3rem;
+          font-size: 1rem;
+          line-height: 1.7;
           text-justify: inter-character; }
         main#post div.flex div.main img {
           width: 100%;
@@ -2171,6 +2194,8 @@ footer {
           margin-top: 2rem;
           margin-bottom: 0rem;
           width: 68%; }
+        main#post div.flex aside a.socials i.fa-facebook {
+          margin-left: 7rem; }
   main#contact {
     padding-top: 8rem;
     height: 100%; }
@@ -2264,8 +2289,8 @@ footer {
         font-size: 1.5rem; }
       section#home-about div.flex .about-text p {
         width: 94%;
-        line-height: 1.5;
-        font-size: 1.3rem;
+        line-height: 1.7;
+        font-size: 1rem;
         margin-bottom: 5px;
         text-justify: inter-character;
         margin-left: 0.5rem; }
@@ -2340,7 +2365,7 @@ footer {
         margin-bottom: 0rem; }
       main#about div.quote p {
         margin-top: 3px;
-        text-align: left; }
+        text-align: justify; }
   section#story {
     padding: 3rem 1rem 3rem 1rem; }
     section#story h1,
@@ -2350,11 +2375,13 @@ footer {
     section#story h1 {
       font-size: 2.1rem; }
     section#story p {
-      font-size: 1.3rem;
+      font-size: 1rem;
       text-align: justify;
-      text-justify: inter-character; }
+      text-justify: inter-character;
+      line-height: 1.7; }
     section#story div.circle-img {
-      margin: 3rem 0; }
+      margin: 3rem 0;
+      margin-bottom: 1rem; }
       section#story div.circle-img img {
         width: 180px;
         height: 180px;
@@ -2372,13 +2399,14 @@ footer {
       font-size: 1.5rem; }
     section#popular-blog p {
       color: #000;
+      font-size: 1rem;
       text-align: justify;
       line-height: 1.7; }
     section#popular-blog a {
-      font-size: 1.2rem;
+      font-size: 1rem;
       color: #000; }
       section#popular-blog a:hover {
-        color: #0f3b57; }
+        color: #009dff; }
     section#popular-blog div.flex {
       display: flex;
       flex-direction: column; }
@@ -2403,8 +2431,9 @@ footer {
       main#blogs div.flex hr {
         margin-bottom: 1.5rem; }
       main#blogs div.flex p {
-        font-size: 1.3rem;
-        text-align: left; }
+        font-size: 1rem;
+        text-align: justify;
+        line-height: 1.7; }
       main#blogs div.flex button {
         width: 120px;
         height: 40px;
@@ -2444,8 +2473,9 @@ footer {
         main#post div.flex div.main h1 {
           font-size: 3rem; }
         main#post div.flex div.main p {
-          font-size: 1.3rem;
-          text-justify: inter-character; }
+          font-size: 1rem;
+          text-justify: inter-character;
+          line-height: 1.7; }
         main#post div.flex div.main img {
           width: 100%;
           height: 300px; }
@@ -2487,6 +2517,8 @@ footer {
           margin-top: 2rem;
           margin-bottom: 0rem;
           width: 68%; }
+        main#post div.flex aside a.socials i.fa-facebook {
+          margin-left: 7rem; }
   main#contact {
     padding-top: 8rem;
     height: 100%; }
@@ -2578,8 +2610,7 @@ footer {
         font-size: 1.5rem; }
       section#home-about div.flex .about-text p {
         width: 95%;
-        font-size: 1.3rem;
-        line-height: 1.5;
+        line-height: 1.7;
         font-size: 1rem;
         margin-bottom: 5px;
         text-justify: inter-character; }
@@ -2658,9 +2689,9 @@ footer {
         font-size: 2.09rem; }
       main#about div.quote p {
         margin-top: 3px;
-        text-align: left;
+        text-align: justify;
         font-size: 1.3rem;
-        line-height: 1.5; }
+        line-height: 1.7; }
   section#story {
     padding: 3rem 1rem 3rem 1rem; }
     section#story h1,
@@ -2672,10 +2703,11 @@ footer {
     section#story p {
       text-align: justify;
       text-justify: inter-character;
-      font-size: 1.3rem;
-      line-height: 1.5; }
+      font-size: 1rem;
+      line-height: 1.7; }
     section#story div.circle-img {
-      margin: 3rem 0; }
+      margin: 3rem 0;
+      margin-bottom: 1rem; }
       section#story div.circle-img img {
         width: 180px;
         height: 180px;
@@ -2693,13 +2725,14 @@ footer {
       font-size: 1.5rem; }
     section#popular-blog p {
       color: #000;
+      font-size: 1rem;
       text-align: justify;
       line-height: 1.7; }
     section#popular-blog a {
-      font-size: 1.2rem;
+      font-size: 1rem;
       color: #000; }
       section#popular-blog a:hover {
-        color: #0f3b57; }
+        color: #009dff; }
     section#popular-blog div.flex {
       display: flex;
       flex-direction: column; }
@@ -2726,8 +2759,9 @@ footer {
       main#blogs div.flex hr {
         margin-bottom: 1.5rem; }
       main#blogs div.flex p {
-        font-size: 1.3rem;
-        text-align: left; }
+        font-size: 1rem;
+        text-align: justify;
+        line-height: 1.7; }
       main#blogs div.flex button {
         width: 120px;
         height: 40px;
@@ -2767,8 +2801,9 @@ footer {
         main#post div.flex div.main h1 {
           font-size: 3rem; }
         main#post div.flex div.main p {
-          font-size: 1.3rem;
-          text-justify: inter-character; }
+          font-size: 1rem;
+          text-justify: inter-character;
+          line-height: 1.7; }
         main#post div.flex div.main img {
           width: 100%;
           height: 300px; }
@@ -2810,6 +2845,8 @@ footer {
           margin-top: 2rem;
           margin-bottom: 0rem;
           width: 68%; }
+        main#post div.flex aside a.socials i.fa-facebook {
+          margin-left: 7rem; }
   main#contact {
     padding-top: 8rem;
     height: 100%; }
