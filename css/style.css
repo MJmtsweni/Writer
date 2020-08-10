@@ -102,7 +102,8 @@ a {
 
 i.fa {
   font-size: 1.5em;
-  padding-right: 20px; }
+  padding-right: 20px;
+  padding-bottom: 20px; }
 
 hr.black-line {
   border: 2px solid #000; }
@@ -402,7 +403,7 @@ main#post {
         font-weight: 500; }
       main#post div.flex div.main .grey-line {
         margin: 0; }
-      main#post div.flex div.main input[name="comment"] {
+      main#post div.flex div.main textarea[name="comment"] {
         width: 568px;
         height: 210px; }
       main#post div.flex div.main .holder1 {
@@ -496,7 +497,7 @@ main#contact {
         width: 194px;
         height: 35px;
         padding-top: 12px; }
-      main#contact .flex .message input[id="message"] {
+      main#contact .flex .message textarea[name="message"] {
         width: 452px;
         height: 185px; }
       main#contact .flex .message input[type="submit"] {
@@ -522,6 +523,10 @@ main#contact {
             color: #009dff; }
           main#contact .flex .social div a i.fa {
             font-size: 2.5em; }
+            main#contact .flex .social div a i.fa h4 {
+              font-size: 1.2rem; }
+            main#contact .flex .social div a i.fa:hover h4 {
+              color: #707070; }
     main#contact .flex h1 {
       margin: 0; }
 
@@ -577,7 +582,7 @@ footer {
       width: 50%;
       margin-right: 2rem; }
       section#home-about div.flex .about-text h1 {
-        font-size: 4rem; }
+        font-size: 3.7rem; }
       section#home-about div.flex .about-text h2 {
         font-size: 2.5rem; }
       section#home-about div.flex .about-text p {
@@ -778,7 +783,7 @@ footer {
           font-weight: 500; }
         main#post div.flex div.main .grey-line {
           margin: 0; }
-        main#post div.flex div.main input[name="comment"] {
+        main#post div.flex div.main textarea[name="comment"] {
           width: 95%;
           height: 170px; }
         main#post div.flex div.main .holder1 {
@@ -862,7 +867,7 @@ footer {
           width: 194px;
           height: 35px;
           padding-top: 12px; }
-        main#contact .flex .message input[id="message"] {
+        main#contact .flex .message textarea[name="message"] {
           width: 452px;
           height: 185px; }
         main#contact .flex .message input[type="submit"] {
@@ -1124,7 +1129,7 @@ footer {
           font-weight: 500; }
         main#post div.flex div.main .grey-line {
           margin: 0; }
-        main#post div.flex div.main input[name="comment"] {
+        main#post div.flex div.main textarea[name="comment"] {
           width: 95%;
           height: 170px; }
         main#post div.flex div.main .holder1 {
@@ -1142,7 +1147,7 @@ footer {
           width: 18px;
           height: 16px; }
         main#post div.flex div.main input[name="name"] {
-          margin-right: 9rem; }
+          margin-right: 6rem; }
         main#post div.flex div.main input[type="submit"] {
           width: 120px;
           height: 40px;
@@ -1214,7 +1219,7 @@ footer {
           width: 150px;
           height: 35px;
           padding-top: 12px; }
-        main#contact .flex .message input[id="message"] {
+        main#contact .flex .message textarea[name="message"] {
           width: 256px;
           height: 160px; }
         main#contact .flex .message input[type="submit"] {
@@ -1365,9 +1370,8 @@ footer {
     section#story h1 {
       font-size: 2.8rem; }
     section#story p {
-      font-size: 1.3rem;
-      text-align: justify;
-      text-justify: inter-character; }
+      font-size: 1rem;
+      text-align: left; }
     section#story div.circle-img {
       margin: 3rem 0;
       margin-bottom: 1rem; }
@@ -1469,7 +1473,7 @@ footer {
         main#post div.flex div.main h1 {
           font-size: 3rem; }
         main#post div.flex div.main p {
-          font-size: 1.3rem;
+          font-size: 1rem;
           text-justify: inter-character; }
         main#post div.flex div.main img {
           width: 100%;
@@ -1480,17 +1484,17 @@ footer {
           font-weight: 500; }
         main#post div.flex div.main .grey-line {
           margin: 0; }
-        main#post div.flex div.main input[name="comment"] {
+        main#post div.flex div.main textarea[name="comment"] {
           width: 100%;
           height: 210px; }
         main#post div.flex div.main .holder1 {
-          float: none;
+          float: left;
           margin-top: 2rem; }
         main#post div.flex div.main .holder {
-          margin-top: 0rem; }
+          margin-top: 2rem; }
         main#post div.flex div.main input[name="name"] {
           margin-bottom: 1rem;
-          margin-right: 9rem; }
+          margin-right: 5rem; }
         main#post div.flex div.main label[for="save-details"] {
           font-size: 13px; }
         main#post div.flex div.main img {
@@ -1524,7 +1528,7 @@ footer {
     main#contact .flex {
       display: flex;
       flex-direction: row;
-      padding: 3rem 1rem 6rem 1rem; }
+      padding: 3rem 1rem 3rem 1rem; }
       main#contact .flex h2 {
         font-size: 1.3rem; }
       main#contact .flex h1 {
@@ -1547,7 +1551,7 @@ footer {
           width: 200px;
           height: 35px;
           padding-top: 12px; }
-        main#contact .flex .message input[id="message"] {
+        main#contact .flex .message textarea[name="message"] {
           width: 260px;
           height: 160px; }
         main#contact .flex .message input[type="submit"] {
@@ -1564,7 +1568,9 @@ footer {
             color: #fff;
             border-color: #000; }
       main#contact .flex .social {
-        flex-basis: 50%; } }
+        flex-basis: 50%; }
+        main#contact .flex .social div {
+          margin-top: 4rem; } }
 
 @media screen and (max-width: 557px) {
   nav {
@@ -1837,7 +1843,7 @@ footer {
           font-weight: 500; }
         main#post div.flex div.main .grey-line {
           margin: 0; }
-        main#post div.flex div.main input[name="comment"] {
+        main#post div.flex div.main textarea[name="comment"] {
           width: 100%;
           height: 210px; }
         main#post div.flex div.main .holder1 {
@@ -1901,11 +1907,11 @@ footer {
           margin-top: 1rem; }
         main#contact .flex .message input[name="name"],
         main#contact .flex .message input[name="email"] {
-          width: 230px;
+          width: 237px;
           height: 35px;
           padding-top: 12px; }
-        main#contact .flex .message input[id="message"] {
-          width: 270px;
+        main#contact .flex .message textarea[name="message"] {
+          width: 100%;
           height: 160px; }
         main#contact .flex .message input[type="submit"] {
           width: 120px;
@@ -1921,7 +1927,13 @@ footer {
             color: #fff;
             border-color: #000; }
       main#contact .flex .social {
-        flex-basis: 100%; } }
+        flex-basis: 100%; }
+        main#contact .flex .social div {
+          margin-top: 4rem; }
+          main#contact .flex .social div i.fa {
+            font-size: 2em !important; }
+            main#contact .flex .social div i.fa h4 {
+              font-size: 1rem !important; } }
 
 @media screen and (max-width: 425px) {
   nav {
@@ -1932,20 +1944,21 @@ footer {
   main#home {
     padding: 10rem 0rem; }
     main#home div.home {
-      margin-left: 2rem; }
+      margin-left: 2rem;
+      margin-top: 9vh; }
       main#home div.home img {
         width: 227px;
         height: 290px; }
     main#home div.rotate {
       left: 4.5rem;
       right: 0;
-      top: 40%;
+      top: 51%;
       transform: rotate(19deg); }
       main#home div.rotate h1.lg-home {
         font-size: 2.8rem;
         text-align: center;
         line-height: 45px;
-        margin-left: -16px; }
+        margin-left: -10px; }
       main#home div.rotate h3.sm-home {
         font-size: 1.8rem;
         margin-bottom: -7px;
@@ -1957,7 +1970,7 @@ footer {
     section#home-about div.flex .about-text {
       width: 100%; }
       section#home-about div.flex .about-text h1 {
-        font-size: 2.7rem;
+        font-size: 2.5rem;
         margin-bottom: 1rem; }
       section#home-about div.flex .about-text h2 {
         font-size: 1.8rem; }
@@ -2047,6 +2060,10 @@ footer {
     section#story p,
     section#story a {
       color: #fff; }
+      section#story h1 i.fa,
+      section#story p i.fa,
+      section#story a i.fa {
+        font-size: 1.3em; }
     section#story h1 {
       font-size: 2.6rem; }
     section#story p {
@@ -2069,7 +2086,7 @@ footer {
     margin-bottom: 3rem; }
     section#popular-blog h1 {
       font-size: 2.6rem;
-      margin-top: 0rem; }
+      margin-top: 1rem; }
     section#popular-blog h2 {
       font-size: 1.8rem; }
     section#popular-blog p {
@@ -2160,7 +2177,7 @@ footer {
           font-weight: 500; }
         main#post div.flex div.main .grey-line {
           margin: 0; }
-        main#post div.flex div.main input[name="comment"] {
+        main#post div.flex div.main textarea[name="comment"] {
           width: 100%;
           height: 210px; }
         main#post div.flex div.main .holder1 {
@@ -2181,9 +2198,11 @@ footer {
         main#post div.flex aside img {
           margin-top: 1rem;
           margin-left: 8rem; }
+        main#post div.flex aside h1 {
+          margin-bottom: 1rem; }
         main#post div.flex aside a {
           display: block;
-          text-decoration: none;
+          text-decoration: underline;
           color: #000;
           font-size: 1.2rem; }
         main#post div.flex aside p {
@@ -2194,8 +2213,10 @@ footer {
           margin-top: 2rem;
           margin-bottom: 0rem;
           width: 68%; }
+        main#post div.flex aside a.socials i.fa {
+          font-size: 1.2em; }
         main#post div.flex aside a.socials i.fa-facebook {
-          margin-left: 7rem; }
+          margin-left: 8rem; }
   main#contact {
     padding-top: 8rem;
     height: 100%; }
@@ -2229,8 +2250,8 @@ footer {
           width: 206px;
           height: 35px;
           padding-top: 12px; }
-        main#contact .flex .message input[id="message"] {
-          width: 260px;
+        main#contact .flex .message textarea[name="message"] {
+          width: 100%;
           height: 160px; }
         main#contact .flex .message input[type="submit"] {
           width: 120px;
@@ -2246,7 +2267,13 @@ footer {
             color: #fff;
             border-color: #000; }
       main#contact .flex .social {
-        flex-basis: 100%; } }
+        flex-basis: 100%; }
+        main#contact .flex .social div {
+          margin-top: 4rem; }
+          main#contact .flex .social div i.fa {
+            font-size: 2em !important; }
+            main#contact .flex .social div i.fa h4 {
+              font-size: 1rem !important; } }
 
 @media screen and (max-width: 375px) {
   nav {
@@ -2257,14 +2284,15 @@ footer {
   main#home {
     padding: 10rem 0rem; }
     main#home div.home {
-      margin-left: 2rem; }
+      margin-left: 2rem;
+      margin-top: 9vh; }
       main#home div.home img {
         width: 227px;
         height: 290px; }
     main#home div.rotate {
       left: 4.5rem;
       right: 0;
-      top: 40%;
+      top: 51%;
       transform: rotate(19deg); }
       main#home div.rotate h1.lg-home {
         font-size: 2.8rem;
@@ -2372,6 +2400,10 @@ footer {
     section#story p,
     section#story a {
       color: #fff; }
+      section#story h1 i.fa,
+      section#story p i.fa,
+      section#story a i.fa {
+        font-size: 1.3em; }
     section#story h1 {
       font-size: 2.1rem; }
     section#story p {
@@ -2485,7 +2517,7 @@ footer {
           font-weight: 500; }
         main#post div.flex div.main .grey-line {
           margin: 0; }
-        main#post div.flex div.main input[name="comment"] {
+        main#post div.flex div.main textarea[name="comment"] {
           width: 100%;
           height: 210px; }
         main#post div.flex div.main .holder1 {
@@ -2518,7 +2550,7 @@ footer {
           margin-bottom: 0rem;
           width: 68%; }
         main#post div.flex aside a.socials i.fa-facebook {
-          margin-left: 7rem; }
+          margin-left: 8rem; }
   main#contact {
     padding-top: 8rem;
     height: 100%; }
@@ -2552,8 +2584,8 @@ footer {
           width: 194px;
           height: 35px;
           padding-top: 12px; }
-        main#contact .flex .message input[id="message"] {
-          width: 260px;
+        main#contact .flex .message textarea[name="message"] {
+          width: 100%;
           height: 160px; }
         main#contact .flex .message input[type="submit"] {
           width: 120px;
@@ -2569,7 +2601,13 @@ footer {
             color: #fff;
             border-color: #000; }
       main#contact .flex .social {
-        flex-basis: 100%; } }
+        flex-basis: 100%; }
+        main#contact .flex .social div {
+          margin-top: 4rem; }
+          main#contact .flex .social div i.fa {
+            font-size: 2em !important; }
+            main#contact .flex .social div i.fa h4 {
+              font-size: 1rem !important; } }
 
 @media screen and (max-width: 320px) {
   nav {
@@ -2580,14 +2618,15 @@ footer {
   main#home {
     padding: 10rem 0rem; }
     main#home div.home {
-      margin-left: 1rem; }
+      margin-left: 1rem;
+      margin-top: 9vh; }
       main#home div.home img {
         width: 227px;
         height: 290px; }
     main#home div.rotate {
       left: 3.5rem;
       right: 0;
-      top: 40%;
+      top: 51%;
       transform: rotate(19deg); }
       main#home div.rotate h1.lg-home {
         font-size: 2.8rem;
@@ -2649,7 +2688,7 @@ footer {
         margin-bottom: 0.2rem; }
       section#blog-topics div.flex div.img-topics a {
         font-size: 1.2rem;
-        margin-left: 39px;
+        margin-left: 9px;
         margin-bottom: 0.1rem; }
       section#blog-topics div.flex div.img-topics h2 {
         font-size: 1.5rem;
@@ -2698,6 +2737,10 @@ footer {
     section#story p,
     section#story a {
       color: #fff; }
+      section#story h1 i.fa,
+      section#story p i.fa,
+      section#story a i.fa {
+        font-size: 1.3em; }
     section#story h1 {
       font-size: 2.09rem; }
     section#story p {
@@ -2813,7 +2856,7 @@ footer {
           font-weight: 500; }
         main#post div.flex div.main .grey-line {
           margin: 0; }
-        main#post div.flex div.main input[name="comment"] {
+        main#post div.flex div.main textarea[name="comment"] {
           width: 100%;
           height: 210px; }
         main#post div.flex div.main .holder1 {
@@ -2832,7 +2875,8 @@ footer {
       main#post div.flex aside {
         flex-basis: 100%; }
         main#post div.flex aside img {
-          margin-top: 1rem; }
+          margin-top: 1rem;
+          margin-left: 5rem; }
         main#post div.flex aside a {
           display: block;
           text-decoration: none;
@@ -2846,7 +2890,7 @@ footer {
           margin-bottom: 0rem;
           width: 68%; }
         main#post div.flex aside a.socials i.fa-facebook {
-          margin-left: 7rem; }
+          margin-left: 5rem; }
   main#contact {
     padding-top: 8rem;
     height: 100%; }
@@ -2880,7 +2924,7 @@ footer {
           width: 194px;
           height: 35px;
           padding-top: 12px; }
-        main#contact .flex .message input[id="message"] {
+        main#contact .flex .message textarea[name="message"] {
           width: 260px;
           height: 160px; }
         main#contact .flex .message input[type="submit"] {
@@ -2897,4 +2941,10 @@ footer {
             color: #fff;
             border-color: #000; }
       main#contact .flex .social {
-        flex-basis: 100%; } }
+        flex-basis: 100%; }
+        main#contact .flex .social div {
+          margin-top: 4rem; }
+          main#contact .flex .social div i.fa {
+            font-size: 2em !important; }
+            main#contact .flex .social div i.fa h4 {
+              font-size: 1rem !important; } }
