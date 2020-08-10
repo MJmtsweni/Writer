@@ -106,14 +106,22 @@
           <h3>
             Your email will not be published. Required fields are marked *
           </h3>
-          <form action="/action_page.php">
+          <form
+            name="commentBox"
+            id="commentBox"
+            action="/action_page.php"
+            method="post"
+          >
             <label for="comment">Comment</label><br />
-            <input
-              type="text"
-              id="comment"
+            <textarea
               name="comment"
+              id="comment"
+              cols="30"
+              rows="10"
               placeholder="Type your comment here..."
-            /><br />
+              required
+            ></textarea>
+            <br />
             <div class="holder1">
               <label for="name">Name: *</label><br />
               <input
@@ -121,6 +129,7 @@
                 id="name"
                 name="name"
                 placeholder="Type your name here..."
+                required
               />
             </div>
             <div class="holder">
@@ -130,6 +139,7 @@
                 id="email"
                 name="email"
                 placeholder="example@mail.com"
+                required
               />
             </div>
             <br />
@@ -143,7 +153,12 @@
         </div>
         <hr class="grey-line" />
         <aside>
-          <input type="search" name="search" id="search-blogs" />
+          <input
+            type="search"
+            name="search"
+            id="search-blogs"
+            placeholder="Search..."
+          />
           <h1>Recent Posts</h1>
           <a href="#">Do it</a>
           <a href="#">Mid air</a>
