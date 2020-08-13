@@ -106,12 +106,7 @@
           <h3>
             Your email will not be published. Required fields are marked *
           </h3>
-          <form
-            name="commentBox"
-            id="commentBox"
-            action="/action_page.php"
-            method="post"
-          >
+          <form name="commentBox" id="commentBox">
             <label for="comment">Comment</label><br />
             <textarea
               name="comment"
@@ -140,6 +135,8 @@
                 name="email"
                 placeholder="example@mail.com"
                 required
+                oninvalid="this.setCustomValidity('Please enter a valid email address')"
+                onchange="this.setCustomValidity('')"
               />
             </div>
             <br />
@@ -148,7 +145,12 @@
             <label for="save-details"
               >Save my details for next time I comment.</label
             ><br />
-            <input type="submit" value="Post comment" />
+            <input
+              type="submit"
+              id="submit_comment"
+              value="Post comment"
+              onclick="validateForm()"
+            />
           </form>
         </div>
         <hr class="grey-line" />

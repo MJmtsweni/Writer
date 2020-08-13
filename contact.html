@@ -71,7 +71,7 @@
           <h2>Direct Message</h2>
           <h1>Send a Message</h1>
           <div class="holder1">
-          <form name="contact-form" id="contact-form" action="" method="post">
+          <form  id="contact-form" onsubmit="submitform(); return false;" >
             <label for="name">Name: *</label><br />
             <input
               type="text"
@@ -89,18 +89,22 @@
               name="email"
               placeholder="example@mail.com"
               required
+              oninvalid="this.setCustomValidity('Please enter a valid email address')"
+              onchange="this.setCustomValidity('')"
             />
             </div>
             <label for="Message">Message*</label><br />
             <textarea
             name="message"
+            id="message"
             cols="30"
             rows="10"
             placeholder="Type your message here..."
             required
             ></textarea>
             <br />
-            <input type="submit" value="Send Message" />
+            <input type="submit" id="submit" value="Send Message"/> 
+            <span id="status"></span>
           </form>
         </div>
         <div class="social">
